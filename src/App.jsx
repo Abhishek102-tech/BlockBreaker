@@ -6,7 +6,22 @@ function App() {
 
   return (
     <>
-      <header className='heading'><div className="settings"></div>Block Busters</header>
+      <div className="settings"><span class="material-symbols-outlined">
+menu
+</span></div><header className='heading'>Block Busters</header>
+      <div className="game-container">
+        <div className="game">
+            <div className="blocks">
+            <div className="block"></div>
+            <div className="block"></div>
+            <div className="block"></div>
+            <div className="block"></div>
+            <div className="block"></div>
+          </div>
+          <div className="paddle"></div>
+          <div className="ball"></div>
+        </div>
+      </div>
     </>
   )
 }
