@@ -1,10 +1,14 @@
 .settings{
     position: absolute;
     left: 1rem;
-    font-size: 2.5ch;
     color: var(--text-h);
     cursor: pointer;
     padding: 2vh;
+}
+.menu{
+    font-size: 4ch;
+    font-weight: 500;
+    
 }
 .heading{
     font-family: var(--heading);
@@ -16,5 +20,97 @@
     align-items: center;
     justify-content: center;
     padding: 2vh;
+}
+.game-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    height: 80svh;
+    border: 0.5px solid grey;
+}
+.score{
+    font-family: var(--mono);
+    color: var(--text-h);
+    font-size: 3ch;
+    padding:3vh;
+    text-align: center;
+}
+.game-container .game-over{
+    font-family: var(--heading);
+    font-weight: 500;
+    color: var(--text-h);
+    font-size: 4ch;     
+}
+.game-container .restart-button{
+    font-family: var(--mono);
+    color: var(--text-h);       
+    font-size: 2ch;
+    padding: 1vh 2vh;
+    background: var(--code-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.game-container .restart-button:hover{
+    background: var(--text-h);
+    color: var(--bg);   
+}
+@media (max-width: 1024px) {
+  .settings{
+    font-size: 2ch;
+    padding: 1vh;
+  }
+  .heading{
+    font-size: 3ch;
+    padding: 1vh;
+  }
+  .game-container .score{
+    font-size: 1.5ch;
+  }
+  .game-container .game-over{
+    font-size: 2.5ch;     
+  }
+  .game-container .restart-button{
+    font-size: 1.5ch;
+    padding: 0.5vh 1vh;
+  }
+}
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    justify-content: center;
+    padding: 5vh;
+}
+.block{
+    width: 8ch;
+    height: 5ch;
+    background: white;
+    border-radius: 4px;
+}
+@media (max-width: 1024px) {
+    .block{
+        width: 5ch;
+        height: 3ch;
+    }
+}
+.paddle{
+    width: 15ch;
+    height: 2ch;
+    background: white;
+    border-radius: 4px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 50vh;
+}
+.ball{
+    width: 2ch;
+    height: 2ch;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 81%;
 }
 
