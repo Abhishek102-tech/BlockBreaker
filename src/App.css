@@ -22,12 +22,14 @@
     padding: 2vh;
 }
 .game-container{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vh;
     height: 80svh;
     border: 0.5px solid grey;
+    overflow: hidden;
 }
 .score{
     font-family: var(--mono);
@@ -96,13 +98,12 @@
     }
 }
 .paddle{
+    position: absolute;
+    bottom: 5vh;
     width: 15ch;
     height: 2ch;
     background: white;
     border-radius: 4px;
-    align-self: center;
-    justify-self: center;
-    margin-top: 50vh;
 }
 .ball{
     width: 2ch;
